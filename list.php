@@ -18,6 +18,10 @@
     <title>CRUD PHP MYSQL</title>
 </head>
 <body>
+<a href="add.php">Tambah Data</a>
+<br>
+<br>
+
 <table border='1'>
 <tr>
 <th>Nama</th>
