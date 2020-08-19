@@ -15,6 +15,4 @@
     else
         echo "input data gagal ";
 
-
-
 ?>

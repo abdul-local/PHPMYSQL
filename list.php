@@ -7,7 +7,7 @@
     // kita gunakan printah mysqli_fetch_all yang berfungsi untuk mengambil semua data sql 
     $results=mysqli_fetch_all($query, MYSQLI_ASSOC);
     // Cetak beserta indeknya
-    // print_r($results);
+    //  print_r($results);
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +28,7 @@
 <th>Alamat</th>
 <th>umur</th>
 <th>jenis kelamin</th>
+<th>Pilihan</th>
 </tr>
 <?php foreach($results as $key => $nilai) : ?>
 <tr>
@@ -35,6 +36,9 @@
 <td><?php echo $nilai['alamat'];?></td>
 <td><?php echo $nilai['umur'];?></td>
 <td><?php echo $nilai['jeniskelamin'];?></td>
+<td>
+<a href="edit.php?id=<?php echo $nilai['id']?>">Edit</a>
+</td>
 </tr>
 <?php endforeach; ?>
 
