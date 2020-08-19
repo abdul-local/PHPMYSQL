@@ -28,7 +28,7 @@ $results=mysqli_fetch_all($query, MYSQLI_ASSOC);
     <option value="pria" value="<?php echo ($results[0]['jeniskelamin'] == 'pria') ? 'selected': ''; ?>">pria</option>
     <option value="wanit" value="<?php echo ($results[0]['jeniskelamin'] == 'wanit') ? 'selected': ''; ?>">wanita</option>
     </select><br><br>
-    <button type='submit'> tambah</button>
+    <button type='submit'>Perbaharuhi</button>
     </form>
 </body>
 </html>

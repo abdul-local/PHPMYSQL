@@ -29,6 +29,7 @@
 <th>umur</th>
 <th>jenis kelamin</th>
 <th>Pilihan</th>
+<th>Hapus Data</th>
 </tr>
 <?php foreach($results as $key => $nilai) : ?>
 <tr>
@@ -38,6 +39,10 @@
 <td><?php echo $nilai['jeniskelamin'];?></td>
 <td>
 <a href="edit.php?id=<?php echo $nilai['id']?>">Edit</a>
+</td>
+<td>
+<!-- hapus data  -->
+<a href="delete.php?id=<?php echo $nilai['id'] ?>">Hapus</a>
 </td>
 </tr>
 <?php endforeach; ?>
